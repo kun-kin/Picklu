@@ -146,4 +146,7 @@ section.events {
             grid-template-columns: repeat(1, 1fr);
         }
     }
+    @media(max-width:767px) {
+        margin: 50px 0;
+    }
 }

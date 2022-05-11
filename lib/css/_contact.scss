@@ -30,6 +30,14 @@ section.contact {
                 }
             }
         }
+        @media(max-width:991px) {
+            margin-right: 0;
+            padding: 60px;
+            margin-bottom: 30px;
+        }
+        @media(max-width:567px) {
+            padding: 30px;
+        }
     }
     .contact-form {
         .form-title {

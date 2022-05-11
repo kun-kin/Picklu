@@ -1770,6 +1770,11 @@ section.events .gallery-content .gallery-item:nth-child(1), section.events .gall
     grid-template-columns: repeat(1, 1fr);
   }
 }
+@media (max-width: 767px) {
+  section.events {
+    margin: 50px 0;
+  }
+}
 
 section.contact .contact-infor {
   background-color: #303030;
@@ -1800,6 +1805,18 @@ section.contact .contact-infor ul li p {
 }
 section.contact .contact-infor ul li p a {
   color: currentColor;
+}
+@media (max-width: 991px) {
+  section.contact .contact-infor {
+    margin-right: 0;
+    padding: 60px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 567px) {
+  section.contact .contact-infor {
+    padding: 30px;
+  }
 }
 section.contact .contact-form .form-title h3 {
   font-size: 32px;
@@ -1923,6 +1940,16 @@ section.blog-details .blog-wapper blockquote::before {
   top: 27%;
   font-family: fontawesome;
 }
+@media (max-width: 767px) {
+  section.blog-details .blog-wapper blockquote {
+    padding: 40px;
+  }
+  section.blog-details .blog-wapper blockquote::before {
+    font-size: 28px;
+    top: 5%;
+    left: 3%;
+  }
+}
 section.blog-details .blog-wapper .bottom-content p {
   font-size: 16px;
   color: #353535;
@@ -1969,6 +1996,11 @@ section.blog-details .author .box-author-content p {
   color: #353535;
   margin-bottom: 0px;
   max-width: 505px;
+}
+@media (max-width: 567px) {
+  section.blog-details .author .box-author {
+    padding: 40px 0;
+  }
 }
 section.blog-details .tag-next-prev {
   display: flex;
@@ -2024,6 +2056,16 @@ section.blog-details .tag-next-prev .next-prev ul li a {
 }
 section.blog-details .comment.reply {
   margin-left: 150px;
+}
+@media (max-width: 767px) {
+  section.blog-details .comment.reply {
+    margin-left: 70px;
+  }
+}
+@media (max-width: 567px) {
+  section.blog-details .comment.reply {
+    margin-left: 30px;
+  }
 }
 section.blog-details .comment {
   margin-top: 60px;
@@ -2219,6 +2261,11 @@ section.blog-details .blog-sidebar .widget-tag .sidebar-tag li a {
   line-height: 36px;
   border: 1px solid #cbcbcb;
 }
+@media (max-width: 767px) {
+  section.blog-details {
+    margin: 50px 0;
+  }
+}
 
 * {
   margin: 0;
@@ -2312,6 +2359,11 @@ h6 {
 
 .mg-100 {
   margin: 100px 0;
+}
+@media (max-width: 767px) {
+  .mg-100 {
+    margin: 50px 0;
+  }
 }
 
 h1 a,
