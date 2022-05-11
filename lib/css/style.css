@@ -1093,6 +1093,9 @@ section.brand .brand-slide:hover .owl-nav button {
   padding: 90px 0 50px;
   background-color: #313131;
 }
+.footer .footer-content {
+  margin-bottom: 35px;
+}
 .footer .footer-content .footer-title h3 {
   font-size: 20px;
   font-weight: 700;
