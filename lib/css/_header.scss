@@ -1,0 +1,65 @@
+.header {
+    .header-main {
+        padding: 15px 0;
+        .row {
+            align-items: center;
+            justify-content: space-between;
+            .menu {
+                .menu-list {
+                    .menu-item {
+                        display: inline-block;
+                        list-style: none;
+                        position: relative;
+                        .menu-link {
+                            display: block;
+                            font-size: 14px;
+                            font-weight: 500;
+                            padding: 15px 0 15px 25px;
+                            color: var(--link-color);
+                            line-height: 30px;
+                            text-transform: uppercase;
+                            @media(max-width: 991px) {
+                                padding-left: 12px;
+                            }
+                        }
+                    }
+                    .menu-item.active,
+                    .menu-item:hover {
+                        .menu-link {
+                            color: var(--pink-color);
+                        }
+                    }
+                }
+                @media(max-width:768px) {
+                    display: none;
+                }
+            }
+            #header {
+                display: none;
+                @media(max-width: 768px) {
+                    display: block;
+                    a {
+                        span {
+                            font-size: 24px;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+        @media(max-width:768px) {
+            padding: 15px;
+        }
+    }
+    .header-main.fixed {
+        background: rgba(255, 255, 255, .85);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        box-shadow: 0 8px 6px -6px rgb(0 0 0 / 40%);
+        animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+        transition: background 0s ease-in-out 0s, margin-top 0s ease-in-out 0s, opacity 0s ease-in-out 0s;
+    }
+}

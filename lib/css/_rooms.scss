@@ -1,0 +1,120 @@
+section.room-grid {
+    padding: 100px 0;
+    .section-title {
+        margin-bottom: 50px;
+    }
+    .item {
+        margin-bottom: 30px;
+        .inner {
+            overflow: hidden;
+            position: relative;
+            .thumd {
+                position: relative;
+                &::before {
+                    background: rgba(0, 0, 0, 0.7);
+                    bottom: 0;
+                    content: "";
+                    left: 0;
+                    opacity: 0;
+                    pointer-events: none;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    transition: all 400ms ease-in 0s;
+                    z-index: 1;
+                }
+                a {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            .desc {
+                left: 20px;
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 1;
+                &-content {
+                    border: 2px solid #fff;
+                    padding: 30px 30px;
+                    transform: scale3d(1.2, 1.2, 1.2);
+                    transition: all 500ms ease-in 0s;
+                    opacity: 0;
+                    h6 {
+                        a {
+                            color: #fff;
+                            display: block;
+                            font-size: 16px;
+                            font-weight: 600;
+                            line-height: 1;
+                            margin-bottom: 35px;
+                            padding-bottom: 10px;
+                            position: relative;
+                            text-transform: uppercase;
+                            transition: all 300ms ease-in 0s;
+                            &:hover {
+                                color: var(--pink-color);
+                            }
+                            &::before {
+                                background: #caa169 none repeat scroll 0 0;
+                                bottom: -2px;
+                                content: "";
+                                height: 2px;
+                                left: 0;
+                                position: absolute;
+                                width: 45px;
+                            }
+                        }
+                    }
+                    p {
+                        margin: 0 0 9px;
+                        color: #fff;
+                        letter-spacing: 0.025em;
+                    }
+                    .price {
+                        color: #fff;
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 1;
+                    }
+                    .shopbtn {
+                        color: #fff;
+                        display: inline-block;
+                        font-size: 12px;
+                        font-weight: 600;
+                        letter-spacing: 0.1em;
+                        line-height: 30px;
+                        margin-top: 20px;
+                        text-transform: uppercase;
+                        transition: all 300ms ease-in 0s;
+                        &:hover {
+                            color: var(--pink-color);
+                        }
+                    }
+                }
+            }
+            &:hover {
+                .thumd {
+                    &::before {
+                        opacity: 1;
+                        transition: all 400ms ease-in 0s;
+                    }
+                    a {
+                        img {
+                            transform: scale3d(1.05, 1.05, 1.05);
+                            transition: all 400ms ease-in 0s;
+                        }
+                    }
+                }
+                .desc {
+                    &-content {
+                        opacity: 1;
+                        transform: scale3d(1, 1, 1);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,77 @@
+section.contact {
+    .contact-infor {
+        background-color: #303030;
+        padding: 100px 65px;
+        margin-right: 50px;
+        ul {
+            li {
+                list-style: none;
+                display: block;
+                border-bottom: 1px dashed #fff;
+                padding-bottom: 20px;
+                &:not(:first-child) {
+                    padding-top: 30px;
+                }
+                h5 {
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: #fff;
+                    line-height: 32px;
+                    text-transform: capitalize;
+                }
+                p {
+                    max-width: 210px;
+                    color: #fff;
+                    font-size: 16px;
+                    line-height: 25px;
+                    a {
+                        color: currentColor;
+                    }
+                }
+            }
+        }
+    }
+    .contact-form {
+        .form-title {
+            h3 {
+                font-size: 32px;
+                font-weight: 700;
+                margin-bottom: 30px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 25px;
+                color: #353535;
+                max-width: 571px;
+            }
+        }
+        .form-group {
+            input,
+            textarea {
+                width: 100%;
+                border: 1px solid #f5f5f5;
+                background: #f5f5f5;
+                margin-bottom: 30px;
+                color: #222;
+                resize: none;
+                &::placeholder {
+                    text-transform: capitalize;
+                }
+            }
+            input {
+                border: 1px solid #ebebeb;
+                font-size: 16px;
+                line-height: 32px;
+                color: #656565;
+                height: 50px;
+            }
+            textarea {
+                border: 1px solid #ebebeb;
+                font-size: 16px;
+                line-height: 32px;
+                color: #656565;
+                height: 190px;
+            }
+        }
+    }
+}
